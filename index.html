@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Happy Birthday 🤍</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+
+  <!-- Musik -->
+  <audio id="bgMusic" loop>
+    <source src="Lilin_Kecil.mp3" type="audio/mpeg">
+  </audio>
+
+  <div class="card">
+    <h1>Happy Birthday 🤍</h1>
+    <div class="name">Untuk <span id="name">My Favorite Person</span></div>
+    <div class="age">26 Years Old • 28 Desember 2025</div>
+    <div class="countdown" id="countdown"></div>
+
+    <button class="music-btn" onclick="toggleMusic()">🎵 Putar Musik</button>
+
+    <!-- Surat -->
+    <div class="letter">
+      <p id = "loveLetter"></p>
+    </div>
+
+    <!-- Galeri -->
+    <h3>Kenangan Kita 📸</h3>
+    <div class="gallery">
+      <img src="foto1.jpg">
+      <img src="Foto2.jpg">
+      <img src="Foto3.jpg">
+    </div>
+
+    <!-- Harapan -->
+    <h3>Harapan & Mimpi Tahun Depan 🌙</h3>
+    <textarea id="dreamInput" placeholder="Tulis mimpi kamu di sini..."></textarea>
+    <button id="saveBtn">Simpan Harapan</button>
+    <div id="dreamResult" class="dream-result"></div>
+    <div class="saved" id="savedText">✨ Harapan tersimpan ✨</div>
+
+    <footer>Dibuat dengan penuh cinta 🤍</footer>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script src="script.js"></script>
+  
+</body>
+</html>
